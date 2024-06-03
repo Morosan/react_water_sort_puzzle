@@ -1,0 +1,69 @@
+.tube {
+  border-radius: 0px 0px 40px 40px / 0 0 50px 50px;
+  width: 50px;
+  height: 260px;
+  margin: 20px 10px;
+  position: relative;
+  overflow: visible;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 225, 222, 0.3) 0%,
+    rgba(216, 212, 208, 0.3) 0%,
+    rgba(203, 198, 193, 0.3) 0%,
+    rgba(188, 184, 179, 0.3) 6.79%,
+    rgba(166, 162, 159, 0.3) 14.61%,
+    rgba(216, 217, 217, 0.3) 48.07%,
+    rgba(223, 224, 225, 0.3) 52.25%,
+    rgba(210, 210, 210, 0.3) 62.52%,
+    rgba(176, 173, 171, 0.3) 82.19%,
+    rgba(166, 162, 159, 0.3) 87.64%,
+    rgba(208, 210, 211, 0.3) 100%,
+    rgba(166, 168, 171, 0.3) 100%
+  );
+  transition: transform 0.5s;
+}
+
+.tube.selected {
+  transform: translateY(-30px); 
+}
+
+.tube__outer-glass {
+  border-radius: 0px 0px 40px 40px / 0 0 50px 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(174, 208, 237, 0.3) 0%,
+    rgba(166, 204, 235, 0.3) 50%,
+    rgba(81, 168, 220, 0.3) 100%
+  );
+}
+
+.tube__contents {
+  overflow: hidden;
+  border-radius: 0px 0px 40px 40px / 0 0 50px 50px;
+  width: 42px;
+  height: 90%;
+  left: 4px;
+  position: absolute;
+  bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.water {
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.water.red { background-color: red; }
+.water.blue { background-color: blue; }
+.water.green { background-color: green; }
+.water.yellow { background-color: yellow; }
+.water.purple { background-color: purple; }
+.water.orange { background-color: orange; }
+.water.pink { background-color: pink; }
+.water.magenta { background-color: magenta; }
